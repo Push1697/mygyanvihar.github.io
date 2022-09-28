@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+body {
+
+  font-family: Source Sans Pro, sans-serif;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 #firstNav {
   box-shadow: - 10px -10px #ededed;
 
@@ -70,3 +78,28 @@ a:hover {
   font-weight: 500;
   color: white;
 } */
+
+.timeline {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* .section-heading {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900 !important;
+  color: #254aa5;
+} */
+
+.events-section {
+  position: relative;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.btn-style {
+  color: #fff;
+  background-color: #254aa5;
+  border: #254aa5;
+}
