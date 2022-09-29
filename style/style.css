@@ -89,10 +89,10 @@ a:hover {
   height: 100%;
 }
 
-.section-heading {
+.section-heading1 {
   font-family: Source Sans Pro, sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900 !important;
+  font-size: 3rem;
+  font-weight: 700 !important;
   color: #254aa5;
 }
 
@@ -162,4 +162,29 @@ a:hover {
   color: #fff;
   background-color: #254aa5;
   border: #254aa5;
+}
+
+.show>a:link {
+  display: inline-flex;
+  color: #254aa5;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+.show>a:hover {
+  color: black;
+}
+
+.show>a:before {
+  color: #254aa5;
+}
+
+.research-section {
+  width: 100%;
+  background-color: #fff;
+  background-image: url(/Images/gyanvihar\ research\ for\ a\ better\ world_background.png);
+}
+
+.research-section .card-body .center-big {
+  text-align: center !important;
 }
