@@ -1,2 +1,2 @@
 # mygyanvihar.github.io
-Prototype of gyan vihar
+My gyan Vihar clone with simple <i>HTML/CSS/BOOTSTRAP </i>
