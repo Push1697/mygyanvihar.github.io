@@ -5,6 +5,7 @@
 }
 
 * {
+  width: auto;
   margin: 0;
   padding: 0;
 }
@@ -18,10 +19,12 @@ body {
 }
 
 #firstNav {
-  box-shadow: - 10px -10px #ededed;
-
+  box-shadow: 10px -10px #ededed;
+  width: auto;
   display: flex;
   flex-direction: row;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   background-color: #254aa5;
   align-items: center;
   flex-wrap: wrap;
