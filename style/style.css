@@ -1,4 +1,16 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
 
 :root {
   --primary: #254aa5;
@@ -19,8 +31,9 @@ body {
 }
 
 #firstNav {
+  height: 100%;
   box-shadow: 10px -10px #ededed;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin-bottom: 0px;
@@ -32,6 +45,7 @@ body {
 
 #ExtendedSupportedNavbar {
   font-size: 14px;
+  height: 100%;
   display: grid;
   align-content: center;
   justify-content: space-evenly;
@@ -190,4 +204,201 @@ a:hover {
 
 .research-section .card-body .center-big {
   text-align: center !important;
+}
+
+.testimonial-section {
+  width: 100%;
+  background-color: #efefef;
+  background-image: url(/images/new/background/testimonials_background.png)
+}
+
+.tesmonial-card {
+  width: 100%;
+  min-height: 300px
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 400px auto
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.avatar img {
+  padding: 20px
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.avatar-bar-top {
+  position: absolute;
+  top: 2%;
+  left: 1.8%;
+  width: 20%;
+  height: 5px;
+  background-color: #cba92b;
+  margin-bottom: 20px
+}
+
+.avatar-bar-top:after {
+  position: absolute;
+  right: -20px;
+  content: "";
+  width: 15px;
+  height: inherit;
+  background-color: inherit
+}
+
+.avatar-bar-bottom {
+  width: 25%;
+  height: 5px;
+  background-color: #3f5ca3;
+  position: absolute;
+  bottom: 7%;
+  left: 9.5%
+}
+
+@media only screen and (min-width:1440px) {
+  .avatar-bar-top {
+    top: 2%;
+    left: 1%;
+    background-color: #cba92b;
+    margin-bottom: 20px
+  }
+
+  .avatar-bar-bottom,
+  .avatar-bar-top {
+    position: absolute;
+    width: 15%;
+    height: 5px
+  }
+
+  .avatar-bar-bottom {
+    background-color: #3f5ca3;
+    bottom: 7%;
+    left: 6%
+  }
+}
+
+.avatar-bar-bottom:after {
+  position: absolute;
+  left: -20px;
+  content: "";
+  width: 15px;
+  height: inherit;
+  background-color: inherit
+}
+
+.testimonial-section h5 {
+  color: #254aa5;
+  font-weight: 700
+}
+
+@media screen and (max-width:768px) {
+  .trending-section .owl-stage-outer {
+    padding: 10px 29px
+  }
+
+  .grid {
+    padding: 30px 0
+  }
+
+  .testimonial-section img {
+    width: 300px
+  }
+
+  .avatar-bar-top {
+    left: 10%;
+    top: 3%;
+    width: 50%
+  }
+
+  .avatar-bar-bottom {
+    top: 240px;
+    left: 45%;
+    width: 50%
+  }
+
+  .grid {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: 200px auto;
+    grid-row-gap: 20px
+  }
+}
+
+@media screen and (max-width:320px) {
+  .avatar-bar-top {
+    top: 7%
+  }
+
+  .avatar-bar-bottom {
+    top: 210px
+  }
+}
+
+@media screen and (max-width:700px) {
+  .trending-section .owl-stage-outer {
+    padding: 10px 25px
+  }
+}
+
+.testimonial-section .nav-pills {
+  border-bottom: 2px solid #444
+}
+
+.testimonial-section .nav-pills li a {
+  color: #333
+}
+
+.testimonial-section .nav-pills li a.active {
+  background-color: transparent;
+  color: #254aa5;
+  border-bottom: 3px solid #254aa5;
+  border-radius: 0
+}
+
+.testimonial-section .owl-carousel-testimonial .owl-item {
+  padding-left: 40px;
+  padding-right: 40px
+}
+
+.testimonial-section .owl-carousel-testimonial .owl-stage-outer {
+  padding: 10px 0
+}
+
+.events-section {
+  position: relative;
+  padding: 0 40px;
+  width: 100%
+}
+
+.events-section h3 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 7px;
+  text-transform: uppercase
+}
+
+.events-section .event-left a,
+.events-section .event-right a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: inherit;
+  text-decoration-color: inherit
+}
+
+.events-section h5 {
+  color: #254aa5
 }
